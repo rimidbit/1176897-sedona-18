@@ -1,7 +1,7 @@
 # Личный проект «Седона» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
-* Студент: [Владимир Танцюра](https://up.htmlacademy.ru/adaptive/18/user/1176897).
-* Наставник: `Неизвестно`.
+* Студент: [Владимир Танцюра] (https://up.htmlacademy.ru/adaptive/18/user/1176897).
+* Наставник: [Марина Удовенко] (https://htmlacademy.ru/profile/id7570).
 
 ---
 
