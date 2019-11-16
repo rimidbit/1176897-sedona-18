@@ -11,16 +11,16 @@
 					<img src="#" alt="открыть меню">
 				</button>
 				<ul class="main-nav__list">
-					<li class="main-nav__iten">
+					<li class="main-nav__item">
 						<a href="index.html">главная</a>
 					</li>
-					<li class="main-nav__iten">
+					<li class="main-nav__item">
 						<a href="photo.html">фото и видео</a>
 					</li>
-					<li class="main-nav__iten">
+					<li class="main-nav__item">
 						<a href="form.html">форма отзывов</a>
 					</li>
-					<li class="main-nav__iten">
+					<li class="main-nav__item">
 						<a href="#">html academy</a>
 					</li>
 				</ul>
@@ -41,15 +41,15 @@
 					<div class="impression">
 						<h2 class="form__title">Ваше общее впечатление:</h2>
 						<label class="impression__label">
-							<input type="radio" name="impression" checked>
+							<input class="impression__input" type="radio" name="impression" checked>
 							Скорее положительное
 						</label>
 						<label class="impression__label">
-							<input type="radio" name="impression">
+							<input class="impression__input" type="radio" name="impression">
 							Скорее отрицательное
 						</label>
 						<label class="impression__label">
-							<input type="radio" name="impression">
+							<input class="impression__input" type="radio" name="impression">
 							Затрудняюсь ответить
 						</label>
 					</div>
@@ -57,45 +57,45 @@
 						<h2 class="form__title">представьтесь:</h2>
 						<label class="persone__label">
 							имя*:
-							<input placeholder="Петр" name="name">
+							<input class="persone__input" placeholder="Петр" name="name">
 						</label>
 						<label class="persone__label">
 							фамилия*:
-							<input placeholder="Иванов" name="name2">
+							<input class="persone__input" placeholder="Иванов" name="name2">
 						</label>
 						<label class="persone__label">
 							отчество:
-							<input placeholder="Александрович" name="name3">
+							<input class="persone__input" placeholder="Александрович" name="name3">
 						</label>
 					</div>
 				</div>
 				<div class="contacts">
 					<h2 class="form__title form__title--center">контактная информация:</h2>
-					<label class="persone__label">
+					<label class="contacts__label">
 						телефон*:
-						<input placeholder="Введите телефон" name="phone">
+						<input class="contacts__input" placeholder="Введите телефон" name="phone">
 					</label>
-					<label class="persone__label">
+					<label class="contacts__label">
 						электронная почта*:
-						<input placeholder="Введите e-mail" name="mail">
+						<input class="contacts__input" placeholder="Введите e-mail" name="mail">
 					</label>
 				</div>
 				<div class="attractions">
 					<h2 class="form__title form__title--center">посещенные  достопримечательности:</h2>
 					<label class="attractions__label">
-						<input type="checkbox" name="devil-bridge" checked>
+						<input class="attractions__input" type="checkbox" name="devil-bridge" checked>
 						Мост дьявола
 					</label>
 					<label class="attractions__label">
-						<input type="checkbox" name="mountain-ball" checked>
+						<input class="attractions__input" type="checkbox" name="mountain-ball" checked>
 						Гора колокол
 					</label>
 					<label class="attractions__label">
-						<input type="checkbox" name="slide-park" checked>
+						<input class="attractions__input" type="checkbox" name="slide-park" checked>
 						Слайд-парк
 					</label>
 					<label class="attractions__label">
-						<input type="checkbox" name="red-rocks">
+						<input class="attractions__input" type="checkbox" name="red-rocks">
 						Красные скалы
 					</label>
 				</div>
@@ -103,7 +103,7 @@
 					<h2 class="form__title form__title--center">Опишите свои эмоции:</h2>
 					<textarea class="emotions__text" name="comments" placeholder="Опишите подробно все свои восторги"></textarea>
 				</div>
-				<button class="btn" type="submit">оставить отзыв</button>
+				<button class="button" type="submit">оставить отзыв</button>
 				<small class="form__placeholder">* — обязательные поля</small>
 			</form>
 		</main>
@@ -116,7 +116,7 @@
 			</div>
 			<div class="developed">
 				<p class="developed__text">разработано</p>
-				<a href="#">
+				<a class="developed__link" href="#">
 					<img src="#" class="developed__logo" alt="логотип html академии">
 				</a>
 			</div>
