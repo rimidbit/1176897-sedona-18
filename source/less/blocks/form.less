@@ -2,25 +2,27 @@
   .title();
   text-align: center;
   text-transform: uppercase;
+  line-height: 18px;
 }
 
-.margins() {
+.sideMargins() {
   margin-right: 20px;
   margin-left: 20px;
 }
 
-.personality {
-  .margins();
+.form__personality {
+  .sideMargins();
   margin-bottom: 70px;
 }
 
-.personality__label {
+.form__personality-label {
   text-transform: uppercase;
   display: block;
   margin-top: 50px;
+  line-height: 14px;
 }
 
-.personality__input {
+.form__personality-input {
   margin-left: 25px;
   border: transparent;
 }
@@ -37,49 +39,53 @@
 }
 */
 
-.contacts {
-  .margins();
+.form__contacts {
+  .sideMargins();
   margin-bottom: 75px;
 }
 
-.contacts__label {
+.form__contacts-label {
   margin-top: 35px;
   margin-left: 20px;
   display: block;
   text-transform: uppercase;
+  line-height: 14px;
 }
 
-.contacts__input {
+.form__contacts-input {
   display: block;
   border: transparent;
   margin-top: 30px;
 }
 
-.impression, .attractions, .emotions {
-  .margins();
+.form__impression, .form__attractions, .form__emotions {
+  .sideMargins();
   margin-bottom: 75px;
 }
 
-.impression__label, .attractions__label {
+.form__impression-label, .form__attractions-label {
   display: block;
   font-weight: 800;
   margin-top: 55px;
   padding-left: 80px;
+  line-height: 14px;
 }
 
-.emotions__text {
+.form__emotions-text {
   display: block;
   width: 280px;
   height: 115px;
   margin-top: 55px;
   border: transparent;
+  resize: none;
 }
 
 .form__placeholder {
   display: none;
+  line-height: 14px;
 }
 
 .form .button {
-  .margins();
+  .sideMargins();
   width: 280px;
 }
