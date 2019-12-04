@@ -27,3 +27,26 @@
   line-height: 21px;
 }
 
+@media screen and (min-width: 760px) {
+  .recommendations {
+    display: flex;
+    padding: 65px 0;
+  }
+
+  .recommendations__item {
+    padding: 0 35px;
+    text-align: center;
+  }
+
+  .recommendations__title {
+    font-size: @fontSize + 7px;
+  }
+
+  .recommendations__item:nth-child(2) {
+    order: 2;
+  }
+
+  .recommendations__description--food {
+    padding: 0 25px;
+  }
+}
