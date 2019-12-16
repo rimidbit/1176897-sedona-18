@@ -40,14 +40,22 @@ img {
   overflow: hidden;
 }
 
-.button {
-  text-transform: uppercase;
-  font-weight: 800;
-  font-size: @fontSize + 7px;
-  line-height: @fontSize + 7px;
-  background-color: @colorBlue;
-  color: #fff;
-  padding: 22px 35px;
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+  }
 }
+
+@media screen and (min-width: 1280px) {
+  .container {
+    min-width: 1280px;
+    padding: 0 40px;
+  }
+
+ /* body {
+    margin: 0 40px;
+  }*/
+}
+
 
 /*base end*/
