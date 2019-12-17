@@ -47,3 +47,32 @@
 .advantages__items .advantages__description--none-border {
   border-bottom: none;
 }
+
+@media screen and (min-width: 760px) {
+  .advantages__item {
+    display: flex;
+  }
+
+  .advantages__title {
+    font-size: @fontSize + 7px;
+    line-height: 26px;
+  }
+
+  .advantages__text-right {
+    order: 2;
+  }
+
+  .advantages__items {
+    display: flex;
+  }
+
+  .advantages__items .advantages__title {
+    padding: 0 50px;
+  }
+
+  .advantages__items .advantages__description {
+    border-bottom: none;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
