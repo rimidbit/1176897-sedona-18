@@ -43,11 +43,14 @@
 
 .nav__logo {
   text-align: center;
+}
+
+.nav__logo-link {
   position: relative;
   z-index: 5;
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 768px) {
   .nav {
     background-color: white;
     font-size: @fontSize;
@@ -79,5 +82,15 @@
 
   .nav__logo {
     margin-top: -58px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .nav__item:nth-child(2) {
+    margin-left: 120px;
+  }
+
+  .nav__item:nth-child(4) {
+    margin-left: 100px;
   }
 }
