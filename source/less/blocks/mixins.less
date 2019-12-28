@@ -8,16 +8,61 @@
   margin-left: 20px;
 }
 
-
-/*
-.placeholder() {
-  ::-webkit-input-placeholder { font-width: 800; }
-  :-moz-placeholder { font-width: 800; }
-  ::-moz-placeholder { font-width: 800; }
-  :-ms-input-placeholder { font-width: 800; }
+.photoSideTablet() {
+  margin-right: 60px;
+  margin-left: 60px;
 }
 
-.personality__input {
-  .placeholder();
+.photoSideDesktop() {
+  margin-right: 120px;
+  margin-left: 120px;
 }
-*/
+
+.placeholder(@content) {
+  &::-webkit-input-placeholder {
+    @content();
+  }
+
+  &:-moz-placeholder {
+    @content();
+  }
+
+  &::-moz-placeholder {
+    @content();
+  }
+
+  &:-ms-input-placeholder {
+    @content();
+  }
+}
+
+.decorNumber() {
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 2px;
+    background-color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+
+.decorNumberBlack() {
+  &::after,
+  &::before {
+    background-color: black;
+  }
+}
+
+.decorTitle() {
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    width: 280px;
+    height: 2px;
+    background-color: @bgInput;
+  }
+}

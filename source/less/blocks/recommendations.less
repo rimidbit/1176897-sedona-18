@@ -5,6 +5,7 @@
 }
 
 .recommendations__item {
+  margin-top: 41px;
   padding-left: 71px;
   padding-right: 42px;
   text-transform: uppercase;
@@ -15,31 +16,63 @@
   .title();
   line-height: 18px;
 }
-/*
-.recommendations__title--housing:before {
-  content: url("../img/icon-house.svg");
+
+.recommendations__title--food::before,
+.recommendations__title--souvenirs::before,
+.recommendations__title--housing::before {
+  display: block;
   position: absolute;
-  top: -15px;
   left: 21px;
-}*/
+}
+
+.recommendations__title--housing::before {
+  content: url("../img/icon-house.svg");
+  top: -13px;
+  width: 37px;
+  height: 37px;
+}
+
+.recommendations__title--souvenirs::before {
+  content: url("../img/icon-gift.svg");
+  top: -15px;
+  width: 33px;
+  height: 38px;
+}
+
+.recommendations__title--food::before {
+  content: url("../img/icon-burger.svg");
+  top: -10px;
+  width: 37px;
+  height: 35px;
+}
 
 .recommendations__description {
   line-height: 21px;
 }
 
-@media screen and (min-width: 760px) {
+.recommendations__description--new-line {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
   .recommendations {
     display: flex;
     padding: 65px 0;
   }
 
   .recommendations__item {
-    padding: 0 35px;
+    margin-top: 0;
+    padding: 0 44px;
     text-align: center;
+    width: 33%;
   }
 
   .recommendations__title {
     font-size: @fontSize + 7px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
   }
 
   .recommendations__item:nth-child(2) {
@@ -47,6 +80,38 @@
   }
 
   .recommendations__description--food {
-    padding: 0 25px;
+    padding: 0 5px;
+  }
+
+  .recommendations__title--food::before,
+  .recommendations__title--souvenirs::before,
+  .recommendations__title--housing::before {
+    position: static;
+    margin-bottom: 30px;
+  }
+
+  .recommendations__title--housing::before {
+    width: 75px;
+    height: 72px;
+  }
+
+  .recommendations__title--souvenirs::before {
+    width: 61px;
+    height: 72px;
+  }
+
+  .recommendations__title--food::before {
+    width: 76px;
+    height: 69px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .recommendations__description {
+    padding: 0 20px;
+  }
+
+  .recommendations__description--new-line {
+    display: block;
   }
 }
