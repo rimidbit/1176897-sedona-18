@@ -13,18 +13,24 @@
 }
 
 .hotel-selection__description {
-  margin-top: 32px;
-  margin-bottom: 42px;
+  margin-top: 22px;
+  margin-bottom: 32px;
   padding: 0 9px;
   line-height: 24px;
 }
 
 @media screen and (min-width: 768px) {
   .hotel-selection {
-    margin-top: 60px;
+    margin-top: 75px;
+    margin-bottom: 55px;
     display: flex;
     flex-direction: column;
     align-items: center;
+  }
+
+  .hotel-selection__description {
+    margin-top: 32px;
+    margin-bottom: 41px;
   }
 
   .hotel-selection__title {
@@ -33,5 +39,16 @@
 
   .hotel-selection__description span {
     display: block;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .hotel-selection {
+    margin-top: 95px;
+    margin-bottom: 65px;
+  }
+
+  .hotel-selection__description {
+    margin-bottom: 47px;
   }
 }

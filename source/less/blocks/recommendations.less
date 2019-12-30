@@ -2,10 +2,12 @@
   list-style-type: none;
   padding-left: 0;
   margin: 0;
+  padding-bottom: 20px;
+
 }
 
 .recommendations__item {
-  margin-top: 41px;
+/*  margin-top: 41px;*/
   padding-left: 71px;
   padding-right: 42px;
   text-transform: uppercase;
@@ -15,6 +17,7 @@
 .recommendations__title {
   .title();
   line-height: 18px;
+  margin-top: 34px;
 }
 
 .recommendations__title--food::before,
@@ -57,7 +60,9 @@
 @media screen and (min-width: 768px) {
   .recommendations {
     display: flex;
-    padding: 65px 0;
+    align-items: flex-end;
+    padding-top: 58px;
+    padding-bottom: 61px;
   }
 
   .recommendations__item {
@@ -72,7 +77,12 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 30px;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  .recommendations__description {
+    margin-bottom: 0;
   }
 
   .recommendations__item:nth-child(2) {
@@ -107,8 +117,8 @@
 }
 
 @media screen and (min-width: 1280px) {
-  .recommendations__description {
-    padding: 0 20px;
+  .recommendations {
+    padding-bottom: 82px;
   }
 
   .recommendations__description--new-line {
