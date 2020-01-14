@@ -41,7 +41,13 @@
           </button>
         </nav>
         <div class="nav__logo">
-          <a href="index.html" class="nav__logo-link"><img class="logo__img" src="img/logo-sedona-mobile.svg" alt="логотип sedona"></a>
+          <a href="index.html" class="nav__logo-link">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/logo-sedona-mobile.svg">
+              <source media="(max-width: 1279px)" srcset="img/logo-sedona-tablet.svg">
+              <img class="logo__img" src="img/logo-sedona-desktop.svg" alt="логотип sedona">
+            </picture>
+          </a>
         </div>
       </header>
       <main>
@@ -55,7 +61,11 @@
         </div>
         <div class="main-photo">
           <a href="#">
-            <img class="main-photo__images" src="img/photo-sunset-mobile@1x.jpg" alt="дорога в седону на закате">
+            <picture>
+              <source media="(max-width: 767px)" srcset="img/photo-sunset-mobile@1x.jpg">
+              <source media="(max-width: 1279px)" srcset="img/photo-sunset-tablet@1x.jpg">
+              <img class="logo__img" src="img/photo-sunset-desktop@1x.jpg" alt="дорога в седону на закате">
+            </picture>
           </a>
           <div class="main-photo__description">
             <div class="main-photo__text">
@@ -79,7 +89,11 @@
         <div class="photos">
           <div class="photos__item">
             <a href="#">
-              <img class="photos__images" src="img/photo-cactus-mobile@1x.jpg" alt="растительность седоны">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/photo-cactus-mobile@1x.jpg">
+                <source media="(max-width: 1279px)" srcset="img/photo-cactus-tablet@1x.jpg">
+                <img class="logo__img" src="img/photo-cactus-desktop@1x.jpg" alt="растительность седоны">
+              </picture>
             </a>
             <div class="photos__description">
               <div class="photos__text">
@@ -102,7 +116,11 @@
           </div>
           <div class="photos__item">
             <a href="#">
-              <img class="photos__images" src="img/photo-roads-mobile@1x.jpg" alt="дорога на север">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/photo-roads-mobile@1x.jpg">
+                <source media="(max-width: 1279px)" srcset="img/photo-roads-tablet@1x.jpg">
+                <img class="logo__img" src="img/photo-roads-desktop@1x.jpg" alt="дорога на север">
+              </picture>
             </a>
             <div class="photos__description">
               <div class="photos__text">
@@ -125,7 +143,11 @@
           </div>
           <div class="photos__item">
             <a href="#">
-              <img class="photos__images" src="img/photo-bridge-mobile@1x.jpg" alt="Мост дьявола">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/photo-bridge-mobile@1x.jpg">
+                <source media="(max-width: 1279px)" srcset="img/photo-bridge-tablet@1x.jpg">
+                <img class="logo__img" src="img/photo-bridge-desktop@1x.jpg" alt="Мост дьявола">
+              </picture>
             </a>
             <div class="photos__description">
               <div class="photos__text">
