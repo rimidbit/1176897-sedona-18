@@ -347,14 +347,20 @@
     padding-left: 88px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+/*    justify-content: center;*/
   }
 
   .form__attractions-item {
-    margin-right: 70px;
+    margin-left: 10px;
+    margin-right: 60px;
     padding-bottom: 45px;
     width: 200px;
     /*flex-basis: 50%;*/
+  }
+
+  .form__attractions-item:nth-child(2),
+  .form__attractions-item:nth-child(4) {
+    margin-left: 0;
   }
 
   .form__placeholder {
@@ -368,7 +374,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 58px;
+    margin-bottom: 60px;
   }
 
   .form .button {
@@ -387,7 +393,7 @@
   }
 
   .form__title--contacts {
-    margin-top: 15px;
+    margin-top: 13px;
     margin-bottom: 58px;
   }
 
@@ -421,10 +427,12 @@
 
   .form__contacts-input {
     width: 320px;
+    padding-left: 25px;
   }
 
   .form__contacts-label {
-    margin-right: 15px;
+    margin-top: 15px;
+    margin-right: 13px;
     margin-left: 0;
   }
 
