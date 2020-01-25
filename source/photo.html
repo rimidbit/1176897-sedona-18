@@ -5,8 +5,6 @@
 		<title>HTML Academy: Седона</title>
     <meta content="width=device-width, initial-scale=1" name="viewport">
     <link rel="stylesheet" href="css/style.min.css">
-    <script src="js/svg4everybody.js"></script>
-    <script>svg4everybody()</script>
 	</head>
 	<body>
     <div class="container">
@@ -16,7 +14,9 @@
         </div>
         <nav class="nav">
           <button class="nav__open nav__button" type="button">
-            <img src="img/icon-menu.svg" alt="открыть меню">
+            <svg class="nav__icon">
+              <use xlink:href="img/sprite.svg#icon-menu"></use>
+            </svg>
           </button>
           <ul class="nav__list">
             <li class="nav__item">
@@ -33,15 +33,17 @@
             </li>
           </ul>
           <button class="nav__close nav__button" type="button">
-            <img src="img/icon-cross.svg" alt="закрыть меню">
+            <svg class="nav__icon">
+              <use xlink:href="img/sprite.svg#icon-cross"></use>
+            </svg>
           </button>
         </nav>
-        <div class="nav__logo">
-          <a href="index.html" class="nav__logo-link">
+        <div class="logo">
+          <a href="index.html" class="logo__link">
             <picture>
               <source media="(max-width: 767px)" srcset="img/logo-sedona-mobile.svg">
               <source media="(max-width: 1279px)" srcset="img/logo-sedona-tablet.svg">
-              <img class="logo__img" src="img/logo-sedona-desktop.svg" alt="логотип sedona">
+              <img src="img/logo-sedona-desktop.svg" alt="логотип sedona">
             </picture>
           </a>
         </div>
@@ -65,7 +67,7 @@
               <source type="image/webp" srcset="img/photo-sunset-desktop@1x.webp, img/photo-sunset-desktop@2x.webp 2x">
               <source media="(max-width: 767px)" srcset="img/photo-sunset-mobile@1x.jpg, img/photo-sunset-mobile@2x.jpg 2x">
               <source media="(max-width: 1279px)" srcset="img/photo-sunset-tablet@1x.jpg, img/photo-sunset-tablet@2x.jpg 2x">
-              <img class="main-photo__images" src="img/photo-sunset-desktop@1x.jpg" srcset="img/photo-sunset-desktop@2x.jpg" alt="дорога в седону на закате">
+              <img src="img/photo-sunset-desktop@1x.jpg" srcset="img/photo-sunset-desktop@2x.jpg" alt="дорога в седону на закате">
             </picture>
           </a>
           <div class="main-photo__description">
@@ -90,7 +92,7 @@
                 <source type="image/webp" srcset="img/photo-cactus-desktop@1x.webp, img/photo-cactus-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)" srcset="img/photo-cactus-mobile@1x.jpg, img/photo-cactus-mobile@2x.jpg 2x">
                 <source media="(max-width: 1279px)" srcset="img/photo-cactus-tablet@1x.jpg, img/photo-cactus-tablet@2x.jpg 2x">
-                <img class="main-photo__images" src="img/photo-cactus-desktop@1x.jpg" srcset="img/photo-cactus-desktop@2x.jpg" alt="растительность седоны">
+                <img src="img/photo-cactus-desktop@1x.jpg" srcset="img/photo-cactus-desktop@2x.jpg" alt="растительность седоны">
               </picture>
             </a>
             <div class="photos__description">
@@ -114,7 +116,7 @@
                 <source type="image/webp" srcset="img/photo-roads-desktop@1x.webp, img/photo-roads-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)" srcset="img/photo-roads-mobile@1x.jpg, img/photo-roads-mobile@2x.jpg 2x">
                 <source media="(max-width: 1279px)" srcset="img/photo-roads-tablet@1x.jpg, img/photo-roads-tablet@2x.jpg 2x">
-                <img class="main-photo__images" src="img/photo-roads-desktop@1x.jpg" srcset="img/photo-roads-desktop@2x.jpg" alt="дорога на север">
+                <img src="img/photo-roads-desktop@1x.jpg" srcset="img/photo-roads-desktop@2x.jpg" alt="дорога на север">
               </picture>
             </a>
             <div class="photos__description">
@@ -138,7 +140,7 @@
                 <source type="image/webp" srcset="img/photo-bridge-desktop@1x.webp, img/photo-bridge-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)" srcset="img/photo-bridge-mobile@1x.jpg, img/photo-bridge-mobile@2x.jpg 2x">
                 <source media="(max-width: 1279px)" srcset="img/photo-bridge-tablet@1x.jpg, img/photo-bridge-tablet@2x.jpg 2x">
-                <img class="main-photo__images" src="img/photo-bridge-desktop@1x.jpg" srcset="img/photo-bridge-desktop@2x.jpg" alt="Мост дьявола">
+                <img src="img/photo-bridge-desktop@1x.jpg" srcset="img/photo-bridge-desktop@2x.jpg" alt="Мост дьявола">
               </picture>
             </a>
             <div class="photos__description">
@@ -212,7 +214,7 @@
         </div>
         <div class="footer__developed">
           <p class="footer__developed-text">разработано</p>
-          <a href="#" class="footer__developed-link">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__developed-link">
             <svg class="footer__developed-icon">
               <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
             </svg>
@@ -220,5 +222,7 @@
         </div>
       </footer>
     </div>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody()</script>
 	</body>
 </html>

@@ -43,7 +43,7 @@
 .form__contacts-input,
 .form__emotions-text{
   .placeholder({
-    font-weight: 800;
+    font-weight: 600;
     color: #000;
     font-size: @fontSize + 4px;
     line-height: 24px;
@@ -108,6 +108,7 @@
 .form__personality-input {
 /*  padding-top: 22px;
   padding-bottom: 22px;*/
+  height: 60px;
   display: flex;
   align-items: center;
   padding-left: 22px;
@@ -148,7 +149,7 @@
 .form__impression-label,
 .form__attractions-label {
   display: block;
-  font-weight: 800;/*
+  font-weight: 600;/*
   margin-top: 55px;*/
   padding-left: 78px;
   line-height: 14px;
@@ -244,7 +245,7 @@
 
 .form .button {
   width: 100%;
-  margin-bottom: 71px;
+  margin-bottom: 76px;
 }
 
 @media screen and (min-width: 768px) {
@@ -380,7 +381,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    margin-bottom: 60px;
+    margin-bottom: 65px;
   }
 
   .form .button {
@@ -396,11 +397,12 @@
 
   .form__title--impression {
     padding-left: 80px;
+    margin-bottom: 80px;
   }
 
   .form__title--contacts {
-    margin-top: 13px;
-    margin-bottom: 58px;
+    margin-top: 18px;
+    margin-bottom: 60px;
   }
 
   .form__title--emotions {
@@ -412,16 +414,29 @@
     width: 280px;
   }
 
+  .form__impression-item {
+    margin-top: 79px;
+  }
+
+  .form__impression-item--negative,
+  .form__impression-item--undefined {
+    margin-top: 63px;
+  }
+
+  .form__impression-label {
+    padding-left: 79px;
+  }
+
   .form__personality {
     width: 400px;
   }
 
-  .form__personality-input {
-    height: 60px;
+  .form__personality-label {
+    margin-top: 17px;
   }
 
   .form__contacts {
-    margin-bottom: 36px;
+    margin-bottom: 35px;
   }
 
   .form__contacts-wrapper {
@@ -452,7 +467,7 @@
   }
 
   .form__attractions-wrapper {
-    /*width: 100%;*/
+    margin-left: -10px;
     padding-left: 0;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -463,8 +478,12 @@
     margin-right: 0;
   }
 
+  .form__emotions {
+    margin-bottom: 60px;
+  }
+
   .form__button-wrapper {
-    margin-bottom: 65px;
+    margin-bottom: 66px;
   }
 
   .form .button {

@@ -16,7 +16,9 @@
         </div>
         <nav class="nav">
           <button class="nav__open nav__button" type="button">
-            <img src="img/icon-menu.svg" alt="открыть меню">
+            <svg class="nav__icon">
+              <use xlink:href="img/sprite.svg#icon-menu"></use>
+            </svg>
           </button>
           <ul class="nav__list">
             <li class="nav__item">
@@ -33,15 +35,17 @@
             </li>
           </ul>
           <button class="nav__close nav__button" type="button">
-            <img src="img/icon-cross.svg" alt="закрыть меню">
+            <svg class="nav__icon">
+              <use xlink:href="img/sprite.svg#icon-cross"></use>
+            </svg>
           </button>
         </nav>
-        <div class="nav__logo">
-          <a href="index.html" class="nav__logo-link">
+        <div class="logo">
+          <a href="index.html" class="logo__link">
             <picture>
               <source media="(max-width: 767px)" srcset="img/logo-sedona-mobile.svg">
               <source media="(max-width: 1279px)" srcset="img/logo-sedona-tablet.svg">
-              <img class="logo__img" src="img/logo-sedona-desktop.svg" alt="логотип sedona">
+              <img src="img/logo-sedona-desktop.svg" alt="логотип sedona">
             </picture>
           </a>
         </div>
@@ -160,27 +164,29 @@
         </div>
         <div class="footer__developed">
           <p class="footer__developed-text">разработано</p>
-          <a href="#" class="footer__developed-link">
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="footer__developed-link">
             <svg class="footer__developed-icon">
-              <use xlink:href="img/sprite.svg#logo-htmlacademy"></use>
+              <use xlink:href="img/sprite.svg#icon-logo-htmlacademy"></use>
             </svg>
           </a>
         </div>
       </footer>
     </div>
-  <div class="modal-error">
-    <p class="modal-error__head">что-то пошло не так!</p>
-    <p class="modal-error__explanation">проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-    <button class="button">ok</button>
-  </div>
-  <div class="modal-sent">
-    <div class="modal-sent__text">
-      <p class="modal-sent__head">Ваш отзыв отправлен!</p>
-      <p class="modal-sent__explanation">Спасибо за ваше участие, ваш отзыв уже поступил к нам, в ближайшее время мы опубликуем его на сайте.</p>
+    <div class="modal-error">
+      <p class="modal-error__head">что-то пошло не так!</p>
+      <p class="modal-error__explanation">проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+      <button class="button">ok</button>
     </div>
-    <div class="modal-sent__button-wrapper">
-      <button class="button">закрыть окно</button>
+    <div class="modal-sent">
+      <div class="modal-sent__text">
+        <p class="modal-sent__head">Ваш отзыв отправлен!</p>
+        <p class="modal-sent__explanation">Спасибо за ваше участие, ваш отзыв уже поступил к нам, в ближайшее время мы опубликуем его на сайте.</p>
+      </div>
+      <div class="modal-sent__button-wrapper">
+        <button class="button">закрыть окно</button>
+      </div>
     </div>
-  </div>
+    <script src="js/svg4everybody.js"></script>
+    <script>svg4everybody()</script>
 	</body>
 </html>
