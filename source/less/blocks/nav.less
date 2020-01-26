@@ -33,10 +33,12 @@
 }
 
 .nav__button {
+  display: flex;
+  flex-direction: column;
   border: none;
   background-color: transparent;
   position: absolute;
-  right: 17px;
+  right: 14px;
   display: none;
 }
 
@@ -45,14 +47,15 @@
   height: 22px;
 }
 
-.nav__close {
-  top: 18px;
+.nav__icon--close {
+  margin-top: 16px;
   fill: @colorIcon;
 }
 
-.nav__open {
-  bottom: -45px;
+.nav__icon--open {
+  margin-top: 200px;
   fill: @colorBlue;
+  display: none;
 }
 
 @media screen and (min-width: 768px) {

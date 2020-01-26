@@ -31,10 +31,11 @@
 
 .video__controls {
   position: relative;
+  order: 1;
 /*  left: 20px;
   bottom: 65px;*/
   margin-bottom: 110px;
-  margin-left: -60px;
+  margin-left: -280px;
   width: 280px;
   height: 45px;
   background-color: rgba(79, 74, 70, 0.8);
@@ -93,8 +94,8 @@
   margin-left: 19px;
 }
 
-.video__cc {/*
-  margin-left: auto;*/
+.video__cc {
+  margin-left: 105px;
 }
 
 .video__fullscreen {
@@ -123,10 +124,11 @@
   }
 
   .video__controls {
+    margin-bottom: 0;
+    margin-left: 0;
     height: 90px;
     width: 440px;
-    left: 72px;
-    bottom: 0;
+    order: -1;
     background-color: transparent;
   }
 
@@ -165,6 +167,11 @@
 
   .video__reply {
     margin-left: 29px;
+    order: -2;
+  }
+
+  .video__cc {
+    margin-left: auto;
   }
 
   .video__fullscreen {
