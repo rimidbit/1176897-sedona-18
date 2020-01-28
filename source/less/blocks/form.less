@@ -107,8 +107,10 @@
 .form__contacts-input,
 .form__personality-input {
   height: 60px;
-  display: flex;
-  align-items: center;
+  /*display: flex;
+  align-items: center;*/
+  padding-top: 18px;
+  padding-bottom: 23px;
   padding-left: 22px;
   background-color: @bgInput;
 }
@@ -183,6 +185,11 @@
 .form__impression-label:active::before,
 .form__attractions-label:active::before {
   background-color: #d5d5d5;
+}
+
+.form__impression-input:focus + .form__impression-label::before,
+.form__attractions-input:focus + .form__attractions-label::before {
+  background-color: #e5e5e5;
 }
 
 .form__attractions-input:checked + label::after {
@@ -330,9 +337,15 @@
     margin-top: 20px;
   }
 
+  .form__personality-input {
+    padding-left: 15px;
+  }
+
   .form__contacts-label {
     margin-top: 24px;
   }
+
+
 
   .form__attractions-wrapper {
     padding-left: 88px;
@@ -345,7 +358,6 @@
     margin-right: 60px;
     padding-bottom: 45px;
     width: 200px;
-    /*flex-basis: 50%;*/
   }
 
   .form__attractions-item:nth-child(2),
