@@ -39,15 +39,13 @@
   align-items: center;
 }
 
-.form__personality-input,
-.form__contacts-input,
-.form__emotions-text{
-  .placeholder({
+.form__personality-input::placeholder,
+.form__contacts-input::placeholder,
+.form__emotions-text::placeholder {
     font-weight: 600;
     color: #000;
     font-size: @fontSize + 4px;
-    line-height: 24px;
-  })
+    line-height: 14px;
 }
 
 .form__personality-input {
@@ -107,9 +105,7 @@
 .form__contacts-input,
 .form__personality-input {
   height: 60px;
-  /*display: flex;
-  align-items: center;*/
-  padding-top: 18px;
+  padding-top: 23px;
   padding-bottom: 23px;
   padding-left: 22px;
   background-color: @bgInput;
